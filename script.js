@@ -12,7 +12,10 @@ var GRUPOS = [
   { tema: "Elementos químicos", palavras: ["Oxigênio", "Hidrogênio", "Carbono", "Nitrogênio"] },
   { tema: "Períodos da História", palavras: ["Renascimento", "Iluminismo", "Feudalismo", "Antiguidade"] },
   { tema: "Partes do corpo", palavras: ["Perna", "Cabeça", "Mão", "Orelha"] },
-  { tema: "Gatos", palavras: ["Siamês", "Bengal", "Persa", "Angorá Turco"] }
+  { tema: "Gatos", palavras: ["Siamês", "Bengal", "Persa", "Angorá Turco"] },
+  { tema: "Estações do Ano":, palavras: ["Outono", "Inverno", "Verão", "Primavera"] },
+  { tema: "Matérias": , palavras: ["História", "Matemática", "Fisíca", "Quimica"] }
+  
 
 ];
 
