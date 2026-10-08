@@ -15,8 +15,6 @@ var GRUPOS = [
   { tema: "Gatos", palavras: ["Siamês", "Bengal", "Persa", "Angorá Turco"] },
   { tema: "Estações do Ano":, palavras: ["Outono", "Inverno", "Verão", "Primavera"] },
   { tema: "Matérias": , palavras: ["História", "Matemática", "Fisíca", "Quimica"] }
-  
-
 ];
 
 
