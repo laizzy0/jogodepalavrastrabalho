@@ -1,0 +1,260 @@
+
+* {
+  box-sizing: border-box;  
+}
+
+body {
+  margin: 0;                                    
+  font-family: 'Bauhaus 93', century gothic;   
+  color: #34480a;                              
+  background: url('fundo.webp') center bottom / cover no-repeat fixed;   
+}
+
+button {
+  font-family: century gothic;  
+}
+
+
+.tela {
+  display: none;           
+  min-height: 100vh;
+  padding: 20px 16px 32px;
+  flex-direction: column;
+  align-items: center;      
+}
+
+.tela.ativa {
+  display: flex;            
+}
+
+
+.vidro {
+  background: rgba(90, 170, 235, 0.42);       
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 28px;                      
+  box-shadow: 0 0 28px rgba(143, 208, 255, 0.6);
+  backdrop-filter: blur(6px);                 
+}
+
+h2 {
+  margin: 0;
+  color: #4f6b12;
+  text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.5);
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 8px;
+  filter: brightness(0) invert(1);  
+}
+
+
+.inicio-grade {
+  display: flex;           
+  gap: 28px;                
+  width: 1000px;
+  max-width: 100%;
+  margin: auto 0;
+  align-items: flex-start;
+}
+
+.inicio-grade .vidro {
+  flex: 1;                 
+  padding: 26px 29px;
+  color: white;
+  font-size: 17px;
+  line-height: 1.45;
+}
+
+.inicio-grade h2 {
+  margin: -50px 0 15px 0;   
+  font-size: 29px;
+  text-align: center;
+}
+
+.inicio-grade p {
+  margin: 0 0 14px 0;
+  padding-left: 12px;
+  border-left: 2px solid white;   
+}
+
+.inicio-grade .painel-estudo {
+  position: relative;       
+  padding-bottom: 140px;    
+}
+
+
+.btn-jogue {
+  position: relative;
+  z-index: 1;               
+  display: block;
+  margin: 40px auto 0 auto;
+  padding: 13px 42px;
+  font-size: 22px;
+  font-weight: normal;
+  color: #34480a;
+  background: #d8e86e;
+  border: 2px solid white;
+  border-radius: 18px;
+  cursor: pointer;        
+}
+
+.btn-jogue:hover {
+  background: #eef79a;      
+}
+
+
+.boneco {
+  position: absolute;      
+  height: 130px;
+  pointer-events: none;     
+}
+
+.boneco.esq {
+  left: 6%;
+  bottom: 2px;
+}
+
+.boneco.dir {
+  right: -7%;
+  bottom: -30px;
+  height: auto;
+  width: 150px;
+}
+
+
+.topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 680px;
+  max-width: 100%;
+  margin-bottom: 14px;
+  font-size: 16px;
+}
+
+.voltar {
+  background: none;
+  border: 0;
+  font-size: 34px;
+  color: #34480a;
+  cursor: pointer;
+}
+
+.topo .barra {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;   
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: normal;
+}
+
+
+.painel {
+  width: 680px;
+  max-width: 100%;
+  padding: 18px;
+}
+
+
+.acertado {
+  margin-bottom: 8px;
+  padding: 12px 10px;
+  background: #8fd3d9;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.acertado strong {
+  display: block;
+  font-size: 21px;
+}
+
+.acertado span {
+  font-size: 14px;
+}
+
+
+.tabuleiro {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);   
+  gap: 8px;
+}
+
+.tile {
+  min-height: 75px;
+  padding: 6px 4px;
+  font-size: 15px;
+  font-weight: normal;
+  color: #34480a;
+  background: #5f9fc4;
+  border: 0;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.tile:hover {
+  background: #7dbbe0;
+}
+
+.tile.sel {
+  background: #f2d95c;      
+}
+
+.tile.erro {
+  animation: tremer 0.4s;   
+}
+
+
+@keyframes tremer {
+  25%  { transform: translateX(-6px); }
+  75%  { transform: translateX(6px); }
+}
+
+
+.msg {
+  min-height: 22px;
+  margin: 12px 0 0 0;
+  text-align: center;
+  font-weight: normal;
+  color: white;
+  font-size: 16px;
+}
+
+.acoes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.acoes button {
+  padding: 8px 18px;
+  font-size: 15px;
+  font-weight: normal;
+  color: #34480a;
+  background: #e6f1a8;
+  border: 2px solid white;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 720px) {
+  .inicio-grade {
+    flex-direction: column;   
+    gap: 56px;
+    margin-top: 40px;
+  }
+
+  .tile {
+    font-size: 12px;
+  }
+}
+
+strong {
+  font-weight: normal;
+}
