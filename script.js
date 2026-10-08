@@ -10,7 +10,10 @@ var GRUPOS = [
   { tema: "Operações matemáticas", palavras: ["Soma", "Subtração", "Divisão", "Multiplicação"] },
   { tema: "Figuras de linguagem", palavras: ["Metáfora", "Ironia", "Hipérbole", "Metonímia"] },
   { tema: "Elementos químicos", palavras: ["Oxigênio", "Hidrogênio", "Carbono", "Nitrogênio"] },
-  { tema: "Períodos da História", palavras: ["Renascimento", "Iluminismo", "Feudalismo", "Antiguidade"] }
+  { tema: "Períodos da História", palavras: ["Renascimento", "Iluminismo", "Feudalismo", "Antiguidade"] },
+  { tema: "Partes do corpo", palavras: ["Perna", "Cabeça", "Mão", "Orelha"] },
+  { tema: "Gatos", palavras: ["Siamês", "Bengal", "Persa", "Angorá Turco"] }
+
 ];
 
 
